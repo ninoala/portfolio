@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    padding: 1rem 0 0;
+    text-align: center;
+    background-color: #cfd9df;
+
+    &__text {
+        color: $color-grey-dark-3;
+        font-size: 1.6rem;
+        margin: 4rem auto;
+        width: 50%;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__trademark {
+      color: $color-grey-dark-3;
+      margin: 2rem 0 auto;
+      font-size: 1.6rem;
+      padding: 5px;
+      bottom: 0;
+  }
+}

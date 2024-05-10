@@ -1,0 +1,42 @@
+.scrolldown {
+	height: fit-content;
+    position: absolute;
+    left: 0;
+    top: 88%;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+
+    &__field {
+        display: flex;
+
+        span {
+            color: $color-primary-blue;
+            writing-mode: vertical-rl;
+            -ms-writing-mode: tb-rl;
+            -webkit-writing-mode: vertical-rl;
+        }
+    }
+
+    &__mouse {
+        height: 6rem;
+        border: 1px solid $color-primary-blue;
+        position: relative;
+        margin-left: 2rem;
+
+        &:before {
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        position: absolute;
+        top: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-primary-blue;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel 2s infinite;
+    }
+
+
+    }
+}

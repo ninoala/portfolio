@@ -1,0 +1,110 @@
+.contact-page {
+    background-image: linear-gradient(to bottom, #fff 0%, #cfd9df 100%);;
+    margin: 0 auto;
+}
+
+.flex-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
+}
+
+.section-form {
+    max-width: 50rem;
+    height: 50rem;
+
+    @include respond(phone) {
+        padding: 5rem 1rem;
+        width: 40rem;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+}
+
+.contact-form {
+     &__input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: $color-white;
+        height: 1rem;
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+
+    &__textarea {
+        font-family: $font-main;
+        font-size: 1.6rem;
+        width: 100%;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: $color-white;
+        height: 12rem;
+        margin-bottom: 2rem;
+    }
+
+    textarea::placeholder {
+        font-size: 16px; /* Same font size as input fields */
+        font-family: $font-main;
+        font-weight: 400;
+    }
+}
+
+.section-regards {
+    padding: 2.5rem 0;    
+
+    &__text {
+        font-size: 1.6rem;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+//styles for the leaflet map
+.leaflet-container {
+    height: 50rem;
+    width: 50rem;
+    border-radius: 3px;
+    border: solid 1px $color-primary-orange;
+    box-shadow: 0 1rem 1rem rgba($color-black, .1);
+    z-index: 9;
+
+    @include respond(phone) {
+        padding: 5rem 1rem;
+        width: 40rem;
+    }
+}
+
+.leaflet-popup-content-wrapper {
+    background-color: darken($color-primary-blue, 5%);
+}
+
+.leaflet-popup-tip {
+    background-color: $color-primary-orange;
+}
+
+.leaflet-popup-content {
+    font-size: 1.5rem;
+    color: $color-white;
+}
+
+//styles for a toastify-popup message
+.Toastify__toast-body {
+    font-size: 1.6rem;
+}

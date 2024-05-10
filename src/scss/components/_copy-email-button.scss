@@ -1,0 +1,27 @@
+//css to animate the text change on click on the copy email button in the footer
+.btn--copy {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 4rem;
+
+    & > * {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transition: all .2s;
+    }
+
+    &--invisible {
+        position: absolute;
+        top: -100%;
+        left: 0;
+    }
+
+    &:hover &--visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &--invisible {
+        top: 0;
+    }
+}

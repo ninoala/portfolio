@@ -1,0 +1,119 @@
+.header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darken($color-primary-blue, 7%);
+    border-bottom: 1px solid $color-grey-dark-1;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    font-family: $font-space-mono;
+    position: relative;
+
+    &__logo {
+        height: 3rem;
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.nav {
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        margin: 0 2rem;
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-light-2;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $color-primary-orange;
+            transform: scale(2);
+        }
+    }
+
+    &__menu-btn {
+        display: none;
+        outline: none;
+        border: none;
+        background-color: inherit;
+        color: $color-primary-orange;
+        z-index: 11;
+        
+        @include respond(phone) {
+            display: block;
+        }
+    }
+
+    &__menu-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__social-media {
+        display: none;
+        list-style: none;
+    }
+
+    &__social-icon {
+        font-size: 5rem;
+        color: hsla(0, 25%, 100%, .75);
+    }
+
+    @include respond(phone) {
+            display: none;
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                z-index: 10;
+                background-color: darken($color-primary-blue, 7%);
+                animation: slideInDown .5s;
+                overflow: hidden;
+                
+            }
+
+            &.active &__list {
+                flex-direction: column;
+            }
+
+            &.active &__link {
+                font-size: 7rem;
+                font-weight: 700;
+                color: hsla(0, 25%, 100%, .75);
+
+                &:focus {
+                    color: $color-primary-orange;
+                }
+            }
+
+            &.active &__social-media {
+                display: flex;
+                margin-top: 3rem;
+            }
+    }
+}

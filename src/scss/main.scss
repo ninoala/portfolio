@@ -1,0 +1,26 @@
+//abstracts
+@import 'abstracts/fonts';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+//base
+@import 'base/animations';
+@import 'base/base';
+@import 'base/third-party';
+@import 'base/typography';
+@import 'base/utilities';
+
+//components 
+@import 'components/button';
+@import 'components/featured-project';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/headings-animation';
+@import 'components/scrolldown';
+@import 'components/sidebar';
+@import 'components/strategy-card';
+
+//pages
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/home';

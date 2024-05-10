@@ -1,0 +1,21 @@
+//css for two different animations, bounceIn is applied when the page loads, rubberBand is applied on hover
+
+.animated-text {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s .5s;
+    animation-fill-mode: forwards;
+    min-width: 1rem;
+
+    &__hover {
+        min-width: 10px;
+        display: inline-block;
+        animation-fill-mode: both;
+
+        &:hover {
+            animation: rubberBand 1s;
+            color: $color-primary-orange;
+            cursor: grab;
+        }
+    }
+}
