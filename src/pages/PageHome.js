@@ -11,6 +11,7 @@ import { ReactComponent as ResponsiveDesignIcon } from '../assets/design-icon.sv
 import { ReactComponent as CodeIcon } from '../assets/code-icon.svg';
 import { ReactComponent as WebPerformanceIcon } from '../assets/web-icon.svg';
 import { ReactComponent as AccessibilityIcon } from '../assets/accessibility-icon.svg';
+import { projectData } from "../data/projectsData";
 
 const PageHome = () => {
 
@@ -44,7 +45,7 @@ const PageHome = () => {
           <span className="heading-primary--main">
             <HeadingsAnimation letterClassName={letterClassName} headingArray={h1Array}/>
           </span>
-          <span className="heading-primary--sub u-margin-top-small">A <span className='heading-primary--highlight'>front-end web developer</span> based in Ottawa, ON</span>
+          <span className="heading-primary--sub u-margin-top-small">A <span className='heading-primary--highlight'>web developer</span> based in Ottawa, ON</span>
         </h1>
 
         <div className='section-landing__tech-stack u-margin-top-small'>
@@ -70,7 +71,7 @@ const PageHome = () => {
     </section>
 
     <section className='section-about'>
-      <h2 className="heading-secondary">
+      <h2 className="heading-secondary u-margin-bottom-medium">
         <HeadingsAnimation letterClassName={letterClassName} headingArray={h2Array}/>
       </h2>
 
@@ -108,14 +109,20 @@ const PageHome = () => {
     </section>
 
     <section className="section-featured-projects">
-      <h2 className="heading-secondary">
+      <h2 className="heading-secondary u-margin-bottom-medium">
         <HeadingsAnimation letterClassName={letterClassName} headingArray={h2FeatArray}/>
       </h2>
 
       <div className="section-featured-projects__container">
-        <FeaturedProject />
-        <FeaturedProject />
-        <FeaturedProject />
+        {projectData.map(project => (
+          <FeaturedProject
+            key={project.id} // Assign a unique key to each FeaturedProject component
+            thumbnail={project.thumbnail}
+            title={project.title}
+            tech={project.tech}
+            briefDescription={project.briefDescription}
+          />
+        ))}
       </div>
 
       <div className="section-featured-projects__btn-box">

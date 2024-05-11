@@ -186,6 +186,10 @@
         @include respond(tab-land) {
             flex-wrap: wrap;
         }
+
+        @media only screen and (max-width: 900px) {
+            display: block;
+        }
     }
 
     &__btn-box {
