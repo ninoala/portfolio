@@ -18,7 +18,7 @@ const PageProjects = () => {
 
   return (
     <div className='page-projects'>
-      <h1 className='heading-secondary u-margin-top-large u-margin-bottom-medium'>
+      <h1 className='heading-secondary heading-secondary--large u-margin-top-large u-margin-bottom-medium'>
         <HeadingsAnimation letterClassName={letterClassName} headingArray={h1Array}/>
       </h1>
 

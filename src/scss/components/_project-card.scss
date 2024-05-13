@@ -11,8 +11,18 @@
     background-color: darken(rgba($color-primary-blue, .9), 30%);;
     transition: all .65s;
 
+    @include respond (tab-port) {
+        display: block;
+         width: 70%;
+    }
+
     &__thumbnail {
         width: 50%;
+
+        @include respond (tab-port) {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     &__img {
@@ -23,6 +33,11 @@
 
     &__info-container {
         width: 40%;
+
+        @include respond (tab-port) {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     &__description {
@@ -33,6 +48,10 @@
         font-size: 4rem;
         color: $color-primary-orange;
         text-shadow: 0 1rem 1rem rgba($color-black, .2);
+
+        @include respond (phone) {
+            font-size: 2rem;
+        }
     }
 
     &__icons {
@@ -61,6 +80,10 @@
       text-decoration: none;
       color: $color-primary-orange;
       text-shadow: 0 1rem 1rem rgba($color-black, .2);
+
+      &:hover {
+        color: darken($color-primary-orange, 10%);
+      }
     }
 
     &:hover {
