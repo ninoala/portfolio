@@ -1,0 +1,19 @@
+.page-projects {
+    background-image: linear-gradient(to top, #cfd9df 0%, #fff 100%);
+}
+
+.section-projects {
+    &__paragraph {
+        display: flex;
+        margin: 4rem auto;
+        font-size: 2rem;
+        text-align: center;
+        width: 40%;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

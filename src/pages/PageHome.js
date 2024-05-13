@@ -79,7 +79,7 @@ const PageHome = () => {
         A self-motivated and passionate front-end web developer with some <Link to="/projects" className="in-text-link">hands-on project experience</Link>. I am striving to build functional, user-friendly, and visually appealing websites and apps. My coding strategy is based on these four aspects: 
       </p>      
       
-      <div className="section-about__strategies-container">
+      <div className="section-about__strategies-container u-margin-top-large">
         <StrategyCard 
           icon={ResponsiveDesignIcon}
           heading="Responsive Design"
@@ -103,7 +103,7 @@ const PageHome = () => {
         />
       </div>
       
-      <div className="section-about__btn-box">
+      <div className="section-about__btn-box u-margin-top-large">
         <Link to="/about" className="btn btn--about">Learn more about me</Link>
       </div>
     </section>
@@ -116,16 +116,17 @@ const PageHome = () => {
       <div className="section-featured-projects__container">
         {projectData.map(project => (
           <FeaturedProject
-            key={project.id} // Assign a unique key to each FeaturedProject component
+            key={project.id} //assign a unique key to each FeaturedProject component
             thumbnail={project.thumbnail}
             title={project.title}
             tech={project.tech}
             briefDescription={project.briefDescription}
+            github={project.github}
           />
         ))}
       </div>
 
-      <div className="section-featured-projects__btn-box">
+      <div className="section-featured-projects__btn-box u-margin-top-medium">
         <Link to="/projects" className="btn btn--about">View all my projects</Link>
       </div>
     </section>

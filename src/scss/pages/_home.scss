@@ -156,7 +156,6 @@
         display: flex;
         justify-content: center;
         gap: 10rem;
-        margin-top: 10rem;
 
         @include respond(tab-land) {
             flex-wrap: wrap;
@@ -167,7 +166,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10rem;
     }
 }
 
@@ -180,7 +178,6 @@
         justify-content: center;
         align-items: center;
         gap: 5rem;
-        margin-top: 6rem;
         padding: 2rem;
 
         @include respond(tab-land) {
@@ -196,6 +193,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10rem;
     }
 }

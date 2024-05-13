@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
     
-        <h2 className="heading-secondary heading-secondary--footer u-margin-top-medium"><HeadingsAnimation letterClassName={letterClassName} headingArray={h2Array}/></h2>
+        <h2 className="heading-secondary heading-secondary--footer"><HeadingsAnimation letterClassName={letterClassName} headingArray={h2Array}/></h2>
 
         <p className='footer__text'>
             I'm all here for new opportunities, latest tech discussions, or just to chat! Don't hesitate to drop me a message via email or use a <Link className="in-text-link" to="/contact">contact form</Link> instead.

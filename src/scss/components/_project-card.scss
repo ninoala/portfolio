@@ -1,0 +1,71 @@
+.project-card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 9rem 0;
+    margin: 5rem;
+    border-radius: 3px;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.3);
+    background-color: $color-primary-blue;
+    transition: all .85s;
+
+    &__thumbnail {
+        width: 50%;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 1rem 1rem rgba(0,0,0,.5);
+    }
+
+    &__info-container {
+        width: 40%;
+    }
+
+    &__description {
+        color: $color-white;
+    }
+
+    &__title {
+        font-size: 5rem;
+        color: $color-primary-orange;
+        text-shadow: 0 1rem 1rem rgba($color-black, .2);
+    }
+
+    &__icons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &__paragraph {
+        width: 60%;
+        font-size: 2rem;
+        color: $color-white;
+        text-shadow: 0 1rem 1rem rgba($color-black, .2);
+    }
+
+    &__links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    &__link {
+      font-size: 2rem;
+      text-decoration: none;
+      color: $color-primary-orange;
+      text-shadow: 0 1rem 1rem rgba($color-black, .2);
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      width: 87%;
+    }
+}
