@@ -56,8 +56,6 @@ const PageHome = () => {
             <FontAwesomeIcon icon={faJs} className='section-landing__icons--js'/> 
             <FontAwesomeIcon icon={faReact} className='section-landing__icons--react'/> 
             <FontAwesomeIcon icon={faPhp} className='section-landing__icons--php'/>
-            <FontAwesomeIcon icon={faWordpressSimple} className='section-landing__icons--wp'/> 
-            <FontAwesomeIcon icon={faShopify} className='section-landing__icons--shopify'/>
           </div>
         </div>
         <Link to="/projects" className="btn u-margin-top-medium">View My Projects</Link>
@@ -114,13 +112,13 @@ const PageHome = () => {
       </h2>
 
       <div className="section-featured-projects__container">
-        {projectData.map(project => (
+        {projectData.slice(0, 3).map(project => (
           <FeaturedProject
             key={project.id} //assign a unique key to each FeaturedProject component
             thumbnail={project.thumbnail}
             title={project.title}
             tech={project.tech}
-            briefDescription={project.briefDescription}
+            subTitle={project.subTitle}
             github={project.github}
           />
         ))}

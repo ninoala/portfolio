@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const FeaturedProject = ( {thumbnail, title, briefDescription, tech, github} ) => {
+const FeaturedProject = ( {thumbnail, title, subTitle, tech, github} ) => {
 
   //a switch statement to apply css classes to each font awesome icon in the featured project below
   const getIconClass = (icon) => {
@@ -44,7 +44,7 @@ const FeaturedProject = ( {thumbnail, title, briefDescription, tech, github} ) =
             </div>
           </div>
 
-        <p className='featured-project__text'>{briefDescription}</p>
+        <p className='featured-project__text'>{subTitle}</p>
       </div>
 
       <div className='featured-project__links-container'>
