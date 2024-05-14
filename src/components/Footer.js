@@ -4,8 +4,7 @@ import CopyEmailButton from './CopyEmailButton';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-
-  // state hook for initial animation and effect hook with timeout to animate headings' letters on hover
+  // state variable for initial animation and useEffect with timeout to animate headings' letters on hover
   const [letterClassName, setLetterClassName] = useState('animated-text');
   useEffect(() => {
     setTimeout(() => {
@@ -27,7 +26,7 @@ const Footer = () => {
             I'm all here for new opportunities, latest tech discussions, or just to chat! Don't hesitate to drop me a message via email or use a <Link className="in-text-link" to="/contact">contact form</Link> instead.
         </p>
 
-        <div class="footer__btn">
+        <div className="footer__btn">
             <CopyEmailButton />
         </div>
 

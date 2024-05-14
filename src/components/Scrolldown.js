@@ -1,8 +1,8 @@
 const Scrolldown = () => {
   return (
-    <div class="scrolldown">
-      <div class="scrolldown__field">
-        <div class="scrolldown__mouse"></div><span>Scroll</span>
+    <div className="scrolldown">
+      <div className="scrolldown__field">
+        <div className="scrolldown__mouse"></div><span>Scroll</span>
       </div>
     </div>
   )

@@ -81,42 +81,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: .5rem;
+        gap: 1rem;
         margin-top: .5rem;
-        margin-right: .5rem;
+        margin-right: 1rem;
     }
-
+    
+    &__list {
+        list-style: none;
+    }
+    
     &__icon {
         width: 3rem;
         height: 3rem;
-
-        &--html {
-            color: $color-html;
-        }
-
-        &--css {
-            color: $color-css;
-        }
-
-        &--js {
-            color: $color-js;
-        }
-
-        &--react {
-            color: $color-react;
-        }
-
-        &--wp {
-            color: $color-wp;
-        }
-
-        &--php {
-            color: $color-php;
-        }
-
-        &--shopify {
-            color: $color-shopify;
-        }
     }
 
     &:hover {

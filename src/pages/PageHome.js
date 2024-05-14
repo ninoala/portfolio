@@ -9,26 +9,15 @@ import { ReactComponent as CodeIcon } from '../assets/icons/code-icon.svg';
 import { ReactComponent as WebPerformanceIcon } from '../assets/icons/web-icon.svg';
 import { ReactComponent as AccessibilityIcon } from '../assets/icons/accessibility-icon.svg';
 import { projectData } from "../data/projectsData";
-import Profile from '../assets/profile.png';
-import aiLogo from '../assets/logos/ai-logo.svg';
-import bootstrapLogo from '../assets/logos/bootstrap-logo.svg';
+import profile from '../assets/profile.png';
 import cssLogo from '../assets/logos/css-logo.svg';
-import figmaLogo from '../assets/logos/figma-logo.svg';
-import githubLogo from '../assets/logos/github-logo.svg';
 import htmlLogo from '../assets/logos/html-logo.svg';
 import jsLogo from '../assets/logos/js-logo.svg';
-import mySqlLogo from '../assets/logos/mysql-logo.svg';
 import phpLogo from '../assets/logos/php-logo.png';
-import psLogo from '../assets/logos/ps-logo.svg';
 import reactLogo from '../assets/logos/react-logo.svg';
-import restLogo from '../assets/logos/rest-logo.svg';
-import sassLogo from '../assets/logos/sass-logo.svg';
-import shopifyLogo from '../assets/logos/shopify-logo.svg';
-import wpLogo from '../assets/logos/wp-logo.svg';
 
 const PageHome = () => {
-
-  // state hook for initial animation and effect hook with timeout to animate headings' letters on hover
+  // state variable for initial animation and effect hook with timeout to animate headings' letters on hover
   const [letterClassName, setLetterClassName] = useState('animated-text');
   useEffect(() => {
     setTimeout(() => {
@@ -75,7 +64,7 @@ const PageHome = () => {
       </div>
 
         <figure className='section-landing__profile'>
-          <img src={Profile} alt="Yegor Nino, the man, the myth, the legend" className='section-landing__img'/>
+          <img src={profile} alt="Yegor Nino, the man, the myth, the legend" className='section-landing__img'/>
         </figure>
         
         <Scrolldown />
@@ -127,7 +116,7 @@ const PageHome = () => {
       <div className="section-featured-projects__container">
         {projectData.slice(0, 3).map(project => (
           <FeaturedProject
-            key={project.id} //assign a unique key to each FeaturedProject component
+            key={project.id}
             thumbnail={project.thumbnail}
             title={project.title}
             tech={project.tech}
