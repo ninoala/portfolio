@@ -9,8 +9,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const PageContact = () => {
-
-  //useState hook for the function that clears out the data from the form on submit
+  //state variable for the function that clears out the data from the form on submit
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +17,7 @@ const PageContact = () => {
     message: ''
   });
 
-  // useState hook for initial animation and useEffect hook with timeout to animate headings' letters on hover
+  // state variable for initial animation and useEffect with timeout to animate headings' letters on hover
   const [letterClassName, setLetterClassName] = useState('animated-text');
 
   useEffect(() => {
@@ -32,7 +31,7 @@ const PageContact = () => {
   const h1 = 'Contact Me';
   const h1Array = [...h1];
 
-  //useRef hook for the contact form/emailjs
+  //useRef for the contact form/emailjs
   const form = useRef();
   
   //function that makes emailjs service work
@@ -166,4 +165,4 @@ const PageContact = () => {
   )
 }
 
-export default PageContact
+export default PageContact;

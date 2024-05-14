@@ -1,13 +1,12 @@
 import { useState } from 'react';
 
 const CopyEmailButton = () => {
-/*function creates a new temporary textarea element, sets its inner text to my email address, 
-appends it to the document.body and executes copy command, as well as changes the text content of the button*/
-
+  //state variable for whether button is clicked
   const [clicked, setClicked] = useState(false);
 
+  //function creates a new temporary textarea element, sets its inner text to my email address, 
+  //appends it to the document.body and executes copy command, as well as changes the text content of the button
   const handleCopy = () => {
-
     const email = 'yegor.nino@gmail.com';
     const textField = document.createElement('textarea');
     textField.innerText = email;
@@ -32,4 +31,4 @@ appends it to the document.body and executes copy command, as well as changes th
   );
 };
 
-export default CopyEmailButton
+export default CopyEmailButton;

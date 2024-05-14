@@ -6,9 +6,10 @@ import Logo from '../assets/logos/logo.svg';
 import { useState, useEffect } from 'react';
 
 const Header = () => {
-
+  //state variable for nav
   const [navOpen, setNavOpen] = useState(false);
 
+  //nav toggle function
   const handleShowHide = () => {
     setNavOpen(!navOpen);
   };
@@ -32,7 +33,7 @@ const Header = () => {
     return () => {
         document.body.style.overflow = 'unset';
     };
-}, [navOpen]);
+  }, [navOpen]);
 
   return (
     <header className='header'>
@@ -57,7 +58,7 @@ const Header = () => {
             <NavLink className='nav__link' to="/contact">Contact</NavLink>
           </li>
         </ul>
-
+        {/*at width of 600px and below, render social media icons within the mobile nav*/}
         {navOpen && window.innerWidth < 600 &&(
           <ul className="nav__social-media">
             <li className='nav__item'>
@@ -78,7 +79,6 @@ const Header = () => {
           </ul>
         )}
       </nav>
-
 
       <button className='nav__menu-btn' onClick={handleShowHide}>
         {!navOpen

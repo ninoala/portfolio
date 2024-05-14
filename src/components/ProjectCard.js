@@ -32,4 +32,4 @@ const ProjectCard = ( {id, thumbnail, title, briefDescription, tech, github} ) =
   )
   }
 
-export default ProjectCard
+export default ProjectCard;

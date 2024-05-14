@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-// Handle scroll restoration to top when router changes
-
+//handle scroll restoration to top when router changes
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 

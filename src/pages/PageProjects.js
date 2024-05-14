@@ -4,7 +4,7 @@ import { projectData } from "../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 
 const PageProjects = () => {
-  // state hook for initial animation and effect hook with timeout to animate headings' letters on hover
+  // state variable for initial animation and useEffect with timeout to animate headings' letters on hover
   const [letterClassName, setLetterClassName] = useState('animated-text');
   useEffect(() => {
     setTimeout(() => {
@@ -26,6 +26,7 @@ const PageProjects = () => {
         <p className='section-projects__paragraph u-margin-bottom-medium'>Browse through my project showcase below and get a feel for the work that I've been doing so far:</p>
 
         <div className='section-projects__container'>
+        {/*map through and render projects in the projectData file*/}
         {projectData.map(project => (
           <ProjectCard
             key={project.id}
@@ -38,7 +39,6 @@ const PageProjects = () => {
           />
         ))}
         </div>
-
       </section>
     </div>
   )

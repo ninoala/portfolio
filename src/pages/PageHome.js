@@ -114,6 +114,7 @@ const PageHome = () => {
       </h2>
 
       <div className="section-featured-projects__container">
+        {/*map through project data and output first three projects*/}
         {projectData.slice(0, 3).map(project => (
           <FeaturedProject
             key={project.id}
@@ -134,4 +135,4 @@ const PageHome = () => {
   )
 }
 
-export default PageHome
+export default PageHome;

@@ -1,9 +1,6 @@
-
 const StrategyCard = ( {heading, text, icon} ) => {
-
   // dynamically render the icon based on the 'icon' prop
   const IconComponent = icon;
-
 
   return (
     <div className='strategy-card'>
@@ -14,4 +11,4 @@ const StrategyCard = ( {heading, text, icon} ) => {
   )
 }
 
-export default StrategyCard
+export default StrategyCard;

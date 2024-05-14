@@ -8,4 +8,4 @@ const Scrolldown = () => {
   )
 }
 
-export default Scrolldown
+export default Scrolldown;

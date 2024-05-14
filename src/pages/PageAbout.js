@@ -32,6 +32,7 @@ const PageAbout = () => {
   const h1 = 'About Me';
   const h1Array = [...h1];
 
+  //heading in the my toolkit section
   const h2 = 'My Toolkit';
   const h2Array = [...h2];
 
@@ -104,4 +105,4 @@ const PageAbout = () => {
   )
 }
 
-export default PageAbout
+export default PageAbout;

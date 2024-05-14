@@ -30,8 +30,8 @@ Order: base + typography -> general layout + grid > page layout > components
     @media only screen and (max-width: 81.25em) { @content }; //1300px
   }
 
-@if $breakpoint == desktop-small {
-@media only screen and (max-width: 93.75em) { @content }; //1500px
+  @if $breakpoint == desktop-small {
+    @media only screen and (max-width: 93.75em) { @content }; //1500px
   }
 
   @if $breakpoint == desktop {
