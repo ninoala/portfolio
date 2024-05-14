@@ -9,7 +9,7 @@ import githubLogo from '../assets/logos/github-logo.svg';
 import htmlLogo from '../assets/logos/html-logo.svg';
 import jsLogo from '../assets/logos/js-logo.svg';
 import mySqlLogo from '../assets/logos/mysql-logo.svg';
-import phpLogo from '../assets/logos/php-logo.svg';
+import phpLogo from '../assets/logos/php-logo.png';
 import psLogo from '../assets/logos/ps-logo.svg';
 import reactLogo from '../assets/logos/react-logo.svg';
 import restLogo from '../assets/logos/rest-logo.svg';

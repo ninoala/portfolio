@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact, faWordpressSimple, faPhp, faShopify } from '@fortawesome/free-brands-svg-icons';
-import Profile from '../assets/profile.png';
 import HeadingsAnimation from '../components/HeadingsAnimation';
 import Scrolldown from '../components/Scrolldown';
 import StrategyCard from "../components/StrategyCard";
@@ -12,6 +9,22 @@ import { ReactComponent as CodeIcon } from '../assets/icons/code-icon.svg';
 import { ReactComponent as WebPerformanceIcon } from '../assets/icons/web-icon.svg';
 import { ReactComponent as AccessibilityIcon } from '../assets/icons/accessibility-icon.svg';
 import { projectData } from "../data/projectsData";
+import Profile from '../assets/profile.png';
+import aiLogo from '../assets/logos/ai-logo.svg';
+import bootstrapLogo from '../assets/logos/bootstrap-logo.svg';
+import cssLogo from '../assets/logos/css-logo.svg';
+import figmaLogo from '../assets/logos/figma-logo.svg';
+import githubLogo from '../assets/logos/github-logo.svg';
+import htmlLogo from '../assets/logos/html-logo.svg';
+import jsLogo from '../assets/logos/js-logo.svg';
+import mySqlLogo from '../assets/logos/mysql-logo.svg';
+import phpLogo from '../assets/logos/php-logo.png';
+import psLogo from '../assets/logos/ps-logo.svg';
+import reactLogo from '../assets/logos/react-logo.svg';
+import restLogo from '../assets/logos/rest-logo.svg';
+import sassLogo from '../assets/logos/sass-logo.svg';
+import shopifyLogo from '../assets/logos/shopify-logo.svg';
+import wpLogo from '../assets/logos/wp-logo.svg';
 
 const PageHome = () => {
 
@@ -51,11 +64,11 @@ const PageHome = () => {
         <div className='section-landing__tech-stack u-margin-top-small'>
           <span>Tech Stack | </span>
           <div className="section-landing__icons">
-            <FontAwesomeIcon icon={faHtml5} className='section-landing__icons--html'/> 
-            <FontAwesomeIcon icon={faCss3Alt} className='section-landing__icons--css'/> 
-            <FontAwesomeIcon icon={faJs} className='section-landing__icons--js'/> 
-            <FontAwesomeIcon icon={faReact} className='section-landing__icons--react'/> 
-            <FontAwesomeIcon icon={faPhp} className='section-landing__icons--php'/>
+            <img src={htmlLogo} alt="HTML logo" className='section-landing__icon' />
+            <img src={cssLogo} alt="CSS logo" className='section-landing__icon' />
+            <img src={jsLogo} alt="JavaScript logo" className='section-landing__icon' />
+            <img src={reactLogo} alt="React logo" className='section-landing__icon' />
+            <img src={phpLogo} alt="PHP logo" className='section-landing__icon' />
           </div>
         </div>
         <Link to="/projects" className="btn u-margin-top-medium">View My Projects</Link>

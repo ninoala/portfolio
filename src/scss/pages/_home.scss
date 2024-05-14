@@ -95,10 +95,12 @@
     &__icons {
         display: inline-block;
         display: flex;
+        align-items: center;
         gap: 1rem;
 
         & > * {
-            font-size: 5rem;
+            width: 5rem;
+            height: 5rem;
             transition: all .2s;
 
             @include respond(desktop-small) {
