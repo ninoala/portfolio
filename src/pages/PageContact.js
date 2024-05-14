@@ -154,7 +154,7 @@ const PageContact = () => {
           Thank you for making it all the way to my contact page, I'm excited to hear from you soon.
         </p>
         <p className='section-regards__text'>
-          While you're still here, you can add me on <a href='https://www.linkedin.com/' className="in-text-link">LinkedIn</a> or check out my code on <a href='https://www.github.com/' className="in-text-link">GitHub</a>.
+          While you're still here, you can add me on <a href="https://www.linkedin.com/in/yegor-nino778/" target="_blank" rel="noopener noreferrer" className="in-text-link">LinkedIn</a> or check out my code on <a href="https://github.com/ninoala/" target="_blank" rel="noopener noreferrer" className="in-text-link">GitHub</a>.
         </p>
         <p className='section-regards__text'>
           And if you're interested, you can always revisit my <Link className="in-text-link" to="/projects">projects page</Link> for another glimpse of what I've been working on.

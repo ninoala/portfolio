@@ -1,4 +1,4 @@
-const FeaturedProject = ( {thumbnail, title, subTitle, tech, github} ) => {
+const FeaturedProject = ( {thumbnail, title, subTitle, tech, github, livesite} ) => {
   return (
     <div className='featured-project'>
       <img src={thumbnail} alt='Featured project thumbnail' className='featured-project__img'/>
@@ -19,8 +19,8 @@ const FeaturedProject = ( {thumbnail, title, subTitle, tech, github} ) => {
         </div>
 
       <div className='featured-project__links-container'>
-        <a href='#' className='featured-project__link'>Live Site</a>
-        <a href={github} className='featured-project__link'>GitHub</a>
+        <a href={livesite} target="_blank" rel="noopener noreferrer" className='featured-project__link'>Live Site</a>
+        <a href={github} target="_blank" rel="noopener noreferrer" className='featured-project__link'>GitHub</a>
       </div>
     </div>
   )

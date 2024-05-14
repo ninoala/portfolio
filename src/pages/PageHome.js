@@ -123,6 +123,7 @@ const PageHome = () => {
             tech={project.tech}
             subTitle={project.subTitle}
             github={project.github}
+            livesite={project.livesite}
           />
         ))}
       </div>

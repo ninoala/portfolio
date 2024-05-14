@@ -36,6 +36,7 @@ const PageProjects = () => {
             tech={project.tech}
             briefDescription={project.briefDescription}
             github={project.github}
+            livesite={project.livesite}
           />
         ))}
         </div>

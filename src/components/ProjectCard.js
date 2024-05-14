@@ -1,4 +1,4 @@
-const ProjectCard = ( {id, thumbnail, title, briefDescription, tech, github} ) => {
+const ProjectCard = ( {id, thumbnail, title, briefDescription, tech, github, livesite} ) => {
   return (
     <div className={`project-card ${id}`}>
       <div className='project-card__thumbnail'><img src={thumbnail} alt='Project thumbnail' className='project-card__img'/></div>
@@ -24,8 +24,8 @@ const ProjectCard = ( {id, thumbnail, title, briefDescription, tech, github} ) =
         </div>
 
         <div className='project-card__links'>
-          <a href='#' className='project-card__link'>Live Site</a>
-          <a href={github} className='project-card__link'>GitHub</a>
+          <a href={livesite} target="_blank" rel="noopener noreferrer" className='project-card__link'>Live Site</a>
+          <a href={github} target="_blank" rel="noopener noreferrer" className='project-card__link'>GitHub</a>
         </div>
       </div>
     </div>

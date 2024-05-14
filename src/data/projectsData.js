@@ -23,7 +23,8 @@ export const projectData = [
     briefDescription: 'A dynamic React web app that utilizes TMDB API and allows users to browse and save their favourite movies.',
     tech: [reactLogo, htmlLogo, sassLogo, restLogo, bootstrapLogo, githubLogo],
     thumbnail: cinefunThumbnail,
-    github: 'https://github.com/ninoala/portfolio',
+    github: 'https://github.com/ninoala/cinefun',
+    livesite: 'https://ynino.dev/cinefun'
   },
   {
     id: 'portfolio',
@@ -33,6 +34,7 @@ export const projectData = [
     tech: [reactLogo, htmlLogo, sassLogo, githubLogo],
     thumbnail: portfolioThumbnail,
     github: 'https://github.com/ninoala/portfolio',
+    livesite: 'https://ynino.dev/'
   },
   {
     id: 'tracker',
@@ -41,7 +43,8 @@ export const projectData = [
     briefDescription: "A PHP application designed for tracking attendance with a secure login system that allows users to manage student records by adding, deleting, or editing entries in the database.",
     tech: [phpLogo, htmlLogo, sassLogo, mySqlLogo, githubLogo],
     thumbnail: trackerThumbnail,
-    github: 'https://github.com/ninoala/college-attendance-tracker'
+    github: 'https://github.com/ninoala/college-attendance-tracker',
+    livesite: 'https://ynino.dev/tracker'
   },
   {
     id: 'natours',
@@ -50,7 +53,8 @@ export const projectData = [
     briefDescription: "A landing page for a travel agency with an emphasis on modern CSS techniques and CSS animations.",
     tech: [htmlLogo, sassLogo, jsLogo, githubLogo],
     thumbnail: natoursThumbnail,
-    github: 'https://github.com/ninoala/natours'
+    github: 'https://github.com/ninoala/natours',
+    livesite: 'https://ynino.dev/natours'
   },
   {
     id: 'trillo',
@@ -59,7 +63,8 @@ export const projectData = [
     briefDescription: "A landing page for a travel booking app with an emphasis on utilizing the CSS Flexbox technique.",
     tech: [htmlLogo, sassLogo, jsLogo, githubLogo],
     thumbnail: trilloThumbnail,
-    github: 'https://github.com/ninoala/trillo'
+    github: 'https://github.com/ninoala/trillo',
+    livesite: 'https://ynino.dev/trillo'
   },
   {
     id: 'nexter',
@@ -68,6 +73,7 @@ export const projectData = [
     briefDescription: "A landing page for a real estate agency with an emphasis on utilizing the CSS Grid technique.",
     tech: [htmlLogo, sassLogo, jsLogo, githubLogo] ,
     thumbnail: nexterThumbnail,
-    github: 'https://github.com/ninoala/nexter'
-  },
+    github: 'https://github.com/ninoala/nexter',
+    livesite: 'https://ynino.dev/nexter'
+  }
 ]

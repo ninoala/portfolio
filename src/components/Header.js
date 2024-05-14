@@ -62,12 +62,12 @@ const Header = () => {
         {navOpen && window.innerWidth < 600 &&(
           <ul className="nav__social-media">
             <li className='nav__item'>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="sidebar__link">
+              <a href="https://github.com/ninoala/" target="_blank" rel="noopener noreferrer" className="sidebar__link">
                 <FontAwesomeIcon icon={faGithub} className="nav__social-icon"/>
               </a>
             </li>
             <li className='nav__item'>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="sidebar__link">
+              <a href="https://www.linkedin.com/in/yegor-nino778/" target="_blank" rel="noopener noreferrer" className="sidebar__link">
                 <FontAwesomeIcon icon={faLinkedinIn} className="nav__social-icon"/>   
               </a>
             </li>
