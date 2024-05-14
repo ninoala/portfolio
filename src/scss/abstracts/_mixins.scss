@@ -2,6 +2,7 @@
 
 /*
 $breakpoint values:
+- small-phone
 - phone
 - tab-port
 - tab-land
@@ -12,6 +13,11 @@ Order: base + typography -> general layout + grid > page layout > components
 
 //using ems here instead of rems here, 1em = 16px
 @mixin respond($breakpoint) {
+
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 18.75em) { @content }; //300px
+  }
+
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) { @content }; //600px
   }

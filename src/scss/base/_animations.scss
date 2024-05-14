@@ -1,5 +1,4 @@
  //border radius animation on the profile pic on the home page
- 
  @keyframes moveBorderRadius {
   0% {
       border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -18,10 +17,22 @@
 }
 
 //animation for the scrolldown element in the landing section of the home page
-
 @keyframes wheel {
     to {
         opacity: 0;
         top: 60px;
+    }
+}
+
+//animation for nav sliding back up
+@keyframes slideOutUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
     }
 }
