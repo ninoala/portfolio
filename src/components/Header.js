@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logos/logo.svg';
 import { useState, useEffect } from 'react';
 
 const Header = () => {

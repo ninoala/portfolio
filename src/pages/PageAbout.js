@@ -1,29 +1,25 @@
 import { useState, useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import HeadingsAnimation from '../components/HeadingsAnimation';
-import aiLogo from '../assets/logos/ai-logo.png'
-import asanaLogo from '../assets/logos/asana-logo.png'
-import bootstrapLogo from '../assets/logos/bootstrap-logo.png'
-import cssLogo from '../assets/logos/css-logo.png'
-import figmaLogo from '../assets/logos/figma-logo.png'
-import githubLogo from '../assets/logos/github-logo.png'
-import htmlLogo from '../assets/logos/html-logo.png'
-import jsLogo from '../assets/logos/js-logo.png'
-import laravelLogo from '../assets/logos/laravel-logo.png'
-import mampLogo from '../assets/logos/mamp-logo.png'
-import mySqlLogo from '../assets/logos/mysql-logo.png'
-import phpLogo from '../assets/logos/php-logo.png'
-import psLogo from '../assets/logos/ps-logo.png'
-import reactLogo from '../assets/logos/react-logo.png'
-import restLogo from '../assets/logos/rest-logo.webp'
-import sassLogo from '../assets/logos/sass-logo.webp'
-import shopifyLogo from '../assets/logos/shopify-logo.png'
-import wpLogo from '../assets/logos/wp-logo.png'
+import aiLogo from '../assets/logos/ai-logo.svg';
+import bootstrapLogo from '../assets/logos/bootstrap-logo.svg';
+import cssLogo from '../assets/logos/css-logo.svg';
+import figmaLogo from '../assets/logos/figma-logo.svg';
+import githubLogo from '../assets/logos/github-logo.svg';
+import htmlLogo from '../assets/logos/html-logo.svg';
+import jsLogo from '../assets/logos/js-logo.svg';
+import mySqlLogo from '../assets/logos/mysql-logo.svg';
+import phpLogo from '../assets/logos/php-logo.svg';
+import psLogo from '../assets/logos/ps-logo.svg';
+import reactLogo from '../assets/logos/react-logo.svg';
+import restLogo from '../assets/logos/rest-logo.svg';
+import sassLogo from '../assets/logos/sass-logo.svg';
+import shopifyLogo from '../assets/logos/shopify-logo.svg';
+import wpLogo from '../assets/logos/wp-logo.svg';
 
 
 const PageAbout = () => {
-
-  // state hook for initial animation and effect hook with timeout to animate headings' letters on hover
+  // state variable for initial animation and useEffect with timeout to animate headings' letters on hover
   const [letterClassName, setLetterClassName] = useState('animated-text');
   useEffect(() => {
     setTimeout(() => {
@@ -47,11 +43,11 @@ const PageAbout = () => {
         </h1>
 
         <p className='section-about-me__paragraph'>
-          Hey there, I'm Yegor Nino👋, I'm on the lookout for an exciting Front-End web developer role. My journey into web development started at BCIT's Front-End Web Developer program, where I dove headfirst into the world of coding and web design. This hands-on experience helped me to develop skills and passion for creating beautiful, user-friendly websites. I thrive in the dynamic world of web development, especially when working with ReactJS, Wordpress, PHP, JavaScript, HTML5, and CSS (Sass), these languages are  my creative toolkit.
+          Hey there, I'm Yegor Nino 👋, I'm on a lookout for a Web Developer role. My journey into web development started at BCIT's Front-End Web Developer program, where I dove headfirst into the world of coding and web design. This hands-on experience helped me to develop skills and passion for creating beautiful, user-friendly websites. I thrive in the dynamic world of web development, especially when working with React, PHP, JavaScript, HTML5, and CSS (Sass), these languages are  my creative toolkit.
         </p>
 
         <p className='section-about-me__paragraph'>
-          Before diving into coding, I pursued a Bachelor of Arts in Psychology at Simon Fraser University. This background gives me a unique perspective, blending creativity with analytical thinking. I'm all about attention to detail, creative problem-solving, and diving deep into logical puzzles.
+          Before diving into coding, I pursued a Bachelor of Arts in Psychology at Simon Fraser University. The combination of education and years of experience working in different office environments gives me a unique perspective blending creativity with analytical thinking. I'm all about attention to detail, creative problem-solving, and diving deep into logical puzzles.
         </p>
 
         <p className='section-about-me__paragraph'>
@@ -73,16 +69,13 @@ const PageAbout = () => {
           <img src={wpLogo} alt='Wordpress Logo' className='section-toolkit__img'/>
           <img src={shopifyLogo} alt='Shopify Logo' className='section-toolkit__img'/>
           <img src={sassLogo} alt='SASS Logo' className='section-toolkit__img'/>
-          <img src={mySqlLogo} alt='MySQL Logo' className='section-toolkit__img'/>
-          <img src={laravelLogo} alt='Laravel Logo' className='section-toolkit__img'/>
           <img src={bootstrapLogo} alt='Bootstrap Logo' className='section-toolkit__img'/>
+          <img src={mySqlLogo} alt='MySQL Logo' className='section-toolkit__img'/>
           <img src={restLogo} alt='Rest API Logo' className='section-toolkit__img'/>
+          <img src={githubLogo} alt='GitHub Logo' className='section-toolkit__img'/>
           <img src={figmaLogo} alt='Figma Logo' className='section-toolkit__img'/>
           <img src={psLogo} alt='Adobe Photoshop Logo' className='section-toolkit__img'/>
           <img src={aiLogo} alt='Adobe Illustrator Logo' className='section-toolkit__img'/>
-          <img src={githubLogo} alt='GitHub Logo' className='section-toolkit__img'/>
-          <img src={mampLogo} alt='MAMP Logo' className='section-toolkit__img'/>
-          <img src={asanaLogo} alt='Asana Logo' className='section-toolkit__img'/>
         </div>
       </section>
 

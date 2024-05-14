@@ -36,7 +36,7 @@ const PageHome = () => {
   const h2feat = 'Featured Projects';
   const h2FeatArray = [...h2feat];
 
-
+  
   return (
     <>
     <section className='section-landing'>

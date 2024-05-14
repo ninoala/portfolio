@@ -41,7 +41,7 @@ export const projectData = [
     id: 'natours',
     title: 'Natours Agency',
     subTitle: 'A landing page for a travel agency',
-    briefDescription: "A landing page for a travel agency with an emphasis on modern CSS techniques and nice CSS animations.",
+    briefDescription: "A landing page for a travel agency with an emphasis on modern CSS techniques and CSS animations.",
     tech: [faPhp, faHtml5, faCss3Alt],
     thumbnail: natoursThumbnail,
     github: 'https://github.com/ninoala/natours'
