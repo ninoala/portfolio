@@ -7,10 +7,10 @@ import HeadingsAnimation from '../components/HeadingsAnimation';
 import Scrolldown from '../components/Scrolldown';
 import StrategyCard from "../components/StrategyCard";
 import FeaturedProject from "../components/FeaturedProject";
-import { ReactComponent as ResponsiveDesignIcon } from '../assets/design-icon.svg';
-import { ReactComponent as CodeIcon } from '../assets/code-icon.svg';
-import { ReactComponent as WebPerformanceIcon } from '../assets/web-icon.svg';
-import { ReactComponent as AccessibilityIcon } from '../assets/accessibility-icon.svg';
+import { ReactComponent as ResponsiveDesignIcon } from '../assets/icons/design-icon.svg';
+import { ReactComponent as CodeIcon } from '../assets/icons/code-icon.svg';
+import { ReactComponent as WebPerformanceIcon } from '../assets/icons/web-icon.svg';
+import { ReactComponent as AccessibilityIcon } from '../assets/icons/accessibility-icon.svg';
 import { projectData } from "../data/projectsData";
 
 const PageHome = () => {

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 17280 160" preserveAspectRatio="none" style={{ width: '100%', height: '50px',  }}>
-    <g transform="rotate(180 8640 80)">
-        <path fill="currentColor" d="M0,0 L0,160 L17280,160 L17280,0 C14460 80, 11520 160, 8640 160 C5760 160, 2880 80, 0 0 Z" ></path>
-    </g>
-</svg>
