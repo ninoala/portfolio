@@ -63,14 +63,9 @@
             height: 35rem;
         }
 
-        @include respond(phone) {
+        @include respond(small-phone) {
             width: 25rem;
             height: 25rem;
-        }
-
-        @include respond(small-phone) {
-            width: 20rem;
-            height: 20rem;
         }
     }
 
@@ -87,7 +82,7 @@
             font-size: 2.5rem;
 
             @include respond(desktop-small) {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
             }
         }
     }
@@ -106,11 +101,6 @@
             @include respond(desktop-small) {
                 width: 4rem;
                 height: 4rem;
-            }
-
-            @include respond(phone) {
-                width: 3rem;
-                height: 3rem;
             }
 
              @include respond(small-phone) {
@@ -144,6 +134,10 @@
 
         @include respond(tab-land) {
             flex-wrap: wrap;
+        }
+
+        @include respond(phone) {
+            gap: 5rem;
         }
     }
 

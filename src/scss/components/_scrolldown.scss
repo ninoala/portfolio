@@ -39,4 +39,9 @@
 
 
     }
+
+    @include respond(phone) {
+        display: none;
+        visibility: hidden;
+    }
 }

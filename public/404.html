@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"/>
+    <title>Yegor Nino | Web Developer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+    if (!window.location.hash && !document.querySelector('noscript').getAttribute('redirected')) {
+        var path = window.location.pathname;
+        var url = window.location.protocol + "//" + window.location.hostname + '#' + path.substring(1);
+        document.querySelector('noscript').setAttribute('redirected', 'true');
+        window.location.replace(url);
+    }
+    </script>
+  </body>
+</html>

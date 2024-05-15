@@ -9,6 +9,10 @@
         font-size: 1.6rem;
         margin: 3rem auto;
         width: 50%;
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 
     &__btn {

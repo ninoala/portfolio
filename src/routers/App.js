@@ -16,7 +16,7 @@ const App = () => {
         <Sidebar />
         <main className='main'>
           <Routes>
-            <Route path="/" exact element={<PageHome />} />
+            <Route path="/" element={<PageHome />} />
             <Route path="/about" element={<PageAbout />} />
             <Route path="/projects" element={<PageProjects />} />
             <Route path="/contact" element={<PageContact />} />

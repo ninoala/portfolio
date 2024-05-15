@@ -20,16 +20,12 @@ body {
         }
 
         @include respond(tab-land) {
-            font-size: 4rem;
-        }
-
-        @include respond(phone) {
-            font-size: 3.6rem;
+            font-size: 4.5rem;
             letter-spacing: 0;
         }
 
         @include respond(small-phone) {
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 
@@ -37,14 +33,6 @@ body {
         font-size: 3rem;
         font-weight: 600;
         color: $color-grey-dark-2;
-        
-        @include respond(desktop-small) {
-            font-size: 2.5rem;
-        }
-
-        @include respond(tab-land) {
-            font-size: 2.2rem;
-        }
 
         @include respond(phone) {
             letter-spacing: 0;
@@ -67,6 +55,7 @@ body {
 
     @include respond(phone) {
         font-size: 4rem;
+        letter-spacing: 0;
     }
 
     @include respond(small-phone) {
