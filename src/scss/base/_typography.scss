@@ -7,7 +7,6 @@ body {
 .heading-primary {
     display: flex;
     flex-direction: column;
-    letter-spacing: 2px;
     font-family: $font-main;
 
     &--main {
@@ -16,12 +15,10 @@ body {
 
         @include respond(desktop-small) {
             font-size: 5rem;
-            letter-spacing: 1px;
         }
 
         @include respond(tab-land) {
             font-size: 4.5rem;
-            letter-spacing: 0;
         }
 
         @include respond(small-phone) {
@@ -33,10 +30,6 @@ body {
         font-size: 3rem;
         font-weight: 600;
         color: $color-grey-dark-2;
-
-        @include respond(phone) {
-            letter-spacing: 0;
-        }
     }
 
     &--highlight {
@@ -49,18 +42,15 @@ body {
 .heading-secondary {
     font-family: $font-main;
     font-size: 5rem;
-    letter-spacing: 1.5px;
     color: $color-primary-blue;
     text-align: center;
 
     @include respond(phone) {
         font-size: 4rem;
-        letter-spacing: 0;
     }
 
     @include respond(small-phone) {
         font-size: 3rem;
-        letter-spacing: 0;
     }
 
     &::after {
@@ -73,7 +63,6 @@ body {
     &--footer {
         color: $color-primary-blue;
         font-family: $font-main;
-        letter-spacing: 1.5px;
         text-align: center;
 
         &::after {
