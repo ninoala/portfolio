@@ -78,43 +78,43 @@
     }
 
     @include respond(phone) {
-            display: none;
+        display: none;
 
-            &.active {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                position: fixed;
-                top: 0;
-                left: 0;
-                height: 100vh;
-                width: 100%;
-                z-index: 10;
-                background-color: darken($color-primary-blue, 7%);
-                animation: slideInDown .5s;
-                overflow: hidden;
-                
+        &.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            z-index: 10;
+            background-color: darken($color-primary-blue, 7%);
+            animation: slideInDown .5s;
+            overflow: hidden;
+            
+        }
+
+        &.active &__list {
+            flex-direction: column;
+        }
+
+        &.active &__link {
+            font-size: 7rem;
+            font-weight: 700;
+            color: hsla(0, 25%, 100%, .75);
+
+            &:focus {
+                color: $color-primary-orange;
             }
+        }
 
-            &.active &__list {
-                flex-direction: column;
-            }
-
-            &.active &__link {
-                font-size: 7rem;
-                font-weight: 700;
-                color: hsla(0, 25%, 100%, .75);
-
-                &:focus {
-                    color: $color-primary-orange;
-                }
-            }
-
-            &.active &__social-media {
-                display: flex;
-                margin-top: 3rem;
-            }
+        &.active &__social-media {
+            display: flex;
+            margin-top: 3rem;
+        }
     }
 }
