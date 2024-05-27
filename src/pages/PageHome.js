@@ -10,6 +10,7 @@ import { ReactComponent as WebPerformanceIcon } from '../assets/icons/web-icon.s
 import { ReactComponent as AccessibilityIcon } from '../assets/icons/accessibility-icon.svg';
 import { projectData } from "../data/projectsData";
 import profile from '../assets/profile.png';
+import profileArt from '../assets/profile-art.jpeg';
 import cssLogo from '../assets/logos/css-logo.svg';
 import htmlLogo from '../assets/logos/html-logo.svg';
 import jsLogo from '../assets/logos/js-logo.svg';
@@ -38,6 +39,14 @@ const PageHome = () => {
   const h2feat = 'Featured Projects';
   const h2FeatArray = [...h2feat];
 
+  //change the profile pic on click in the landing section
+  const [isFirstImage, setIsFirstImage] = useState(true);
+  const handleImageClick = () => {
+    setIsFirstImage(!isFirstImage);
+  }
+  const firstImage = profile;
+  const secondImage = profileArt;
+
   
   return (
     <>
@@ -64,7 +73,12 @@ const PageHome = () => {
       </div>
 
         <figure className='section-landing__profile'>
-          <img src={profile} alt="Yegor Nino, the man, the myth, the legend" className='section-landing__img'/>
+          <img 
+            src={isFirstImage ? firstImage : secondImage} 
+            onClick={handleImageClick}
+            alt="Yegor Nino, the man, the myth, the legend" 
+            className='section-landing__img'
+          />
         </figure>
         
         <Scrolldown />
