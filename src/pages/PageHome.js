@@ -44,8 +44,8 @@ const PageHome = () => {
   const handleImageClick = () => {
     setIsFirstImage(!isFirstImage);
   }
-  const firstImage = profile;
-  const secondImage = profileArt;
+  const firstImage = profileArt;
+  const secondImage = profile;
 
   
   return (
